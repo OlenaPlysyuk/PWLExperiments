@@ -1,0 +1,22 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+.env/
+
+# IDE settings
+.idea/
+*.iml
+
+# Results, plots, logs, models
+results_*/
+*/runs.csv
+*.png
+*.pt
+
+# OS files
+.DS_Store
+Thumbs.db

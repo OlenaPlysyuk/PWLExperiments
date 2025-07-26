@@ -149,6 +149,7 @@ def main():
     # --- end CSV LOGGING ---
 
     # plotting
+    '''
     if args.in_dim == 1:
         ds = plot_ds if plot_ds is not None else train_ds
         u.plot_1d(ds, args.outdir)
@@ -156,7 +157,7 @@ def main():
         ds = plot_ds if plot_ds is not None else train_ds
         u.plot_2d(ds, args.outdir)
     print(f"Saved 2D plot to {args.outdir}")
-
+'''
     # activation patterns
     #u.analyze_activation_patterns(model, train_ds)
     #print('End of activation patterns')

@@ -163,4 +163,16 @@ def analyze_activation_patterns(model, ds):
         formatted = ", ".join(f"{s:.6f}" for s in out_vec.tolist())
         print(f"  Output Layer slopes per dim: [{formatted}]")
 
+    def plot(ds, in_dim, outdir):
+        """
+        Call the correct plot function based on dimensionality.
+        in_dim == 1 → plot_1d
+        in_dim == 2 → plot_2d
+        """
+        if in_dim == 1:
+            plot_1d(ds, outdir)
+        elif in_dim == 2:
+            plot_2d(ds, outdir)
+        else:
+            raise ValueError(f"Unsupported in_dim={in_dim}")
 
